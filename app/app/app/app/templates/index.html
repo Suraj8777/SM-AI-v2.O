@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JARVIS AI Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="chat-container">
+        <div class="message jarvis-message">JARVIS: Online and ready to assist</div>
+    </div>
+    <div id="input-container">
+        <input type="text" id="user-input" placeholder="Type your command...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
